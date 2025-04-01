@@ -30,13 +30,13 @@ Professor, <a href="https://github.com/orlandosaraivajr">Orlando Saraiva.</a>
 ## 💻 Layout do Projeto
 <p> Páginas principais apenas:</p>
 
-![](/img/index.jpg)
-![](/img/welcome_p.jpg)
-![](/img/welcome_b.jpg)
-![](/img/cadastro_livros.jpg)
-![](/img/livros_cadastrados.jpg)
-![](/img/pedidos_livros.jpg)
-![](/img/pedidos.jpg)
+![](/img/index.JPG)
+![](/img/welcome_p.JPG)
+![](/img/welcome_b.JPG)
+![](/img/cadastro_livros.JPG)
+![](/img/livros_cadastrados.JPG)
+![](/img/pedidos_livros.JPG)
+![](/img/pedidos.JPG)
 
 ## 📂 Funcionalidades & Estrutura do Projeto
 
