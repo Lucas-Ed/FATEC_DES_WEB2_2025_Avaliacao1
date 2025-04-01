@@ -1,6 +1,7 @@
 <h1>📚 Biblioteca - Sistema de Gestão </h1>
 
-## Descrição
+## 📋 Descrição
+
 Sistema de controle de livros desenvolvido em PHP, HTML e CSS e Bootstrap. O sistema permite que professores solicitem livros e que um bibliotecário gerencie esses pedidos etc...
 
 Sistema desenvolvido como parte [Avaliativa](https://github.com/orlandosaraivajr/FATEC_2025_1SEM_DW2/tree/main/avaliacao1) da disciplina Desenvolvimento web II  do curso: <a href="https://fatecararas.cps.sp.gov.br/tecnologia-em-desenvolvimento-de-softwares-multiplataforma/">DSM- Desenvolvimento de software multiplataforma.</a>
@@ -24,10 +25,20 @@ Professor, <a href="https://github.com/orlandosaraivajr">Orlando Saraiva.</a>
 2. Coloque a pasta `FATEC_DES_WEB2_2025_Avaliacao1`, na pasta `htdocs` do XAMPP ou WAMP.
 3. ligue o servidor local (XAMPP ou WAMP).
 4. Acesse o sistema pelo navegador, no endereço: `http://localhost/FATEC_DES_WEB2_2025_Avaliacao1`.
-5. Faça o login com as credenciais de **professor** ou **biblio**, para testar o sistema.
+5. Faça o login com as credenciais de Login: **professor**, password: **professor** ou,  Login: **biblio** password: **biblio**, para testar o sistema.
 
+## 💻 Layout do Projeto
+<p> Páginas principais apenas:</p>
 
-## Funcionalidades
+![](/img/index.jpg)
+![](/img/welcome_p.jpg)
+![](/img/welcome_b.jpg)
+![](/img/cadastro_livros.jpg)
+![](/img/livros_cadastrados.jpg)
+![](/img/pedidos_livros.jpg)
+![](/img/pedidos.jpg)
+
+## 📂 Funcionalidades & Estrutura do Projeto
 
 ```bash
 /Biblioteca
@@ -43,6 +54,11 @@ Professor, <a href="https://github.com/orlandosaraivajr">Orlando Saraiva.</a>
 │── cadastro_livros.txt      (Armazena livros cadastrados)     
 └── redirect.php             (Gestão do botão voltar, de acordo com usuario logado na página livros_cadastrados.php)
 ```
+
+## ⚠️ Observações
+
+- Não utiliza banco de dados, apenas arquivos .txt para armazenar os dados.
+- O sistema foi desenvolvido para fins acadêmicos, não é recomendado para uso em produção.
 
 ## 📝 Licença
 
