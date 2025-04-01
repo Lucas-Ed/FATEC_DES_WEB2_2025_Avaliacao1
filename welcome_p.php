@@ -21,7 +21,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     <div class="page-header">
         <h1>Olá, <b><?php echo htmlspecialchars($_SESSION["username"]); ?>
         <br>
-        </b>.Benvindo ao site.</h1>
+        </b>,Bem vindo ao site.</h1>
     </div>
     <p>
          
