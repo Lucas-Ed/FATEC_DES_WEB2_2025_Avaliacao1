@@ -1,20 +1,27 @@
 <?php
-session_start();
+session_start(); // Inicia a sessão
 
-// Inicia uma nova sessão ou retoma a sessão existente.
+// Verifica se o usuário está autenticado
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     header("location: index.php");
     exit;
 }
 
-// Verifica corretamente se o usuário é "biblio"
-if (trim(strtolower($_SESSION['username'])) === 'biblio') {
+// Verifica se a variável de sessão "username" está definida
+if (!isset($_SESSION["username"])) {
+    header("location: index.php");
+    exit;
+}
+
+// Redireciona com base no usuário logado
+if ($_SESSION["username"] === 'Blibiotecário') {
     header("Location: welcome_b.php");
-} elseif  (trim(strtolower($_SESSION['username'])) === 'professor') {
+    exit;
+} elseif ($_SESSION["username"] === 'Professor') {
     header("Location: welcome_p.php");
+    exit;
 } else {
     header("Location: index.php");
     exit;
 }
-exit;
 ?>

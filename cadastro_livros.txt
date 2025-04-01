@@ -1,5 +1,4 @@
- titulo: oergjheoi | Autor: grege  | Editora: gfergreg  | ISBN: 123456
- titulo: ola | Autor: joao  | Editora: abril  | ISBN: 2345
- titulo: regegerg | Autor: gegeg  | Editora: gegeg  | ISBN: 785426
- titulo: htrhrth | Autor: hrthrth  | Editora: hrhgrthrehg  | ISBN: 4525488
-Título: giugiug | Autor: nlknlkn | Editora: nklnlk | ISBN: 2222222
+harry poter | jk rolling | abril | 123456
+regreg | jk rollingggegeg | abril | 98765
+teste3 | fefewfw | erfg | 45634
+teste4 | qffefwefwef | abril | 234456

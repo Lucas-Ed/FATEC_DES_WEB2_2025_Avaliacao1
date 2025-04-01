@@ -8,14 +8,11 @@
         exit;
     }
 
-    // $_SESSION["username"]; // Ou 'biblio'
-    
-    // // Verifica se o usuário está logado e tem um tipo definido
-    // if (isset($_SESSION['username'])) {
-    //     $pagina_destino = ($_SESSION['username'] === 'professor') ? 'welcome_p.php' : 'welcome_b.php';
-    // } else {
-    //     $pagina_destino = 'index.php'; // Redireciona para login se não estiver logado
-    // }
+    // Verifica se a variável de sessão "username" existe
+    if (!isset($_SESSION["username"])) {
+        header("location: index.php");
+        exit;
+}
     
 ?>
  

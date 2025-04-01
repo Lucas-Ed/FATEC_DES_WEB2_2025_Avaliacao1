@@ -1,32 +1,35 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (session_status() == PHP_SESSION_NONE) {
-        session_start();
-    }
+session_start(); // Inicia a sessão
 
+// Verifica se o usuário está autenticado e se é um bibliotecário
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== TRUE || !isset($_SESSION["username"]) || $_SESSION["username"] !== 'Blibiotecário') {
+    header("location: index.php"); // Redireciona para a página inicial
+    exit;
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['titulo']) && isset($_POST['autor']) && isset($_POST['editora']) && isset($_POST['isbn'])) {
         $_SESSION["titulo"] = $_POST['titulo'];
         $_SESSION["autor"] = $_POST['autor'];
         $_SESSION["editora"] = $_POST['editora'];
         $_SESSION["isbn"] = $_POST['isbn'];
-        $_SESSION['loggedin'] = TRUE;
-        header("location: dados_recebidos.php");
 
+        // Salva os dados no arquivo
         $arquivo = fopen("cadastro_livros.txt", "a");
         if ($arquivo) {
-            $conteudo = "Título: {$_POST['titulo']} | Autor: {$_POST['autor']} | Editora: {$_POST['editora']} | ISBN: {$_POST['isbn']}\n";
+            $conteudo = "{$_POST['titulo']} | {$_POST['autor']} | {$_POST['editora']} | {$_POST['isbn']}\n";
             fwrite($arquivo, $conteudo);
             fclose($arquivo);
         }
+
+        header("location: dados_recebidos.php"); // Redireciona após o cadastro
         exit;
     } else {
-        $_SESSION['loggedin'] = FALSE;
         echo "Favor preencher todos os campos.";
         exit;
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -99,3 +102,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 </body>
 </html>
+

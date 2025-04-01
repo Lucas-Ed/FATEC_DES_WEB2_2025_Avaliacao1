@@ -1,13 +1,12 @@
 <?php
-session_start();// Inicia uma nova sessão ou retoma a sessão existente.
+session_start(); // Inicia a sessão
 
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     header("location: index.php");
     exit;
 }
-
 ?>
- 
+
 <!DOCTYPE html>
 <html lang="pt_BR">
 <head>

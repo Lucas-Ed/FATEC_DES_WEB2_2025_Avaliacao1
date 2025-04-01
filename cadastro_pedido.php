@@ -1,4 +1,12 @@
 <?php
+session_start(); // Inicia a sessão ANTES de verificar qualquer dado
+
+// Verifica se o usuário está autenticado e se é um bibliotecário
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== TRUE || !isset($_SESSION["username"]) || $_SESSION["username"] !== 'Professor') {
+    header("location: index.php"); // Redireciona para a página inicial
+    exit;
+}
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (session_status() == PHP_SESSION_NONE) {
         session_start();
@@ -14,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $arquivo = fopen("livros.txt", "a");
         if ($arquivo) {
-            $conteudo = "Título: {$_POST['titulo']} | Autor: {$_POST['autor']} | Editora: {$_POST['editora']} | ISBN: {$_POST['isbn']}\n";
+            $conteudo = "{$_POST['titulo']} | {$_POST['autor']} | {$_POST['editora']} | {$_POST['isbn']}\n";
             fwrite($arquivo, $conteudo);
             fclose($arquivo);
         }

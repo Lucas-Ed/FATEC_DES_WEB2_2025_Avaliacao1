@@ -1,17 +1,4 @@
 <?php
- 
-
-// if($_SERVER["REQUEST_METHOD"] == "POST"){
-//     session_start(); // Inicia uma nova sessão ou retoma a sessão existente.
-//     if($_POST['username'] == 'orlando' and $_POST['password'] == '123mudar'){# pode alteerar esta linha para buscar o usuário no banco de dados.
-//         $_SESSION['loggedin'] = TRUE;
-//         $_SESSION["username"] = 'Orlando Saraiva';
-//          header("location: welcome.php");
-//     } else {
-//         $_SESSION['loggedin'] = FALSE;
-//     }
-// }
-
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     session_start(); // Inicia uma nova sessão ou retoma a sessão existente.
     if($_POST['username'] == 'professor' and $_POST['password'] == 'professor'){# pode alteerar esta linha para buscar o usuário no banco de dados.
@@ -25,6 +12,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }else {
         $_SESSION['loggedin'] = FALSE;
         $erro = "Usuário ou senha inválidos!";
+        exit();
     }
 }
 ?>

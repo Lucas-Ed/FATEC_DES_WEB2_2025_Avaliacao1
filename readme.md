@@ -1,9 +1,10 @@
 <h1>📚 Biblioteca - Sistema de Gestão </h1>
 
 ## Descrição
-Sistema de controle de livros desenvolvido em PHP, HTML e CSS. O sistema permite que professores solicitem livros e que um bibliotecário gerencie esses pedidos. O sistema é dividido em duas partes: uma para o professor e outra para o bibliotecário.
+Sistema de controle de livros desenvolvido em PHP, HTML e CSS e Bootstrap. O sistema permite que professores solicitem livros e que um bibliotecário gerencie esses pedidos etc...
 
-Sistema desenvolvido como parte Avaliativo da disciplina Desenvolvimento web II  do curso: <a href="https://fatecararas.cps.sp.gov.br/tecnologia-em-desenvolvimento-de-softwares-multiplataforma/">DSM- Desenvolvimento de software multiplataforma.</a>
+Sistema desenvolvido como parte [Avaliativa](https://github.com/orlandosaraivajr/FATEC_2025_1SEM_DW2/tree/main/avaliacao1) da disciplina Desenvolvimento web II  do curso: <a href="https://fatecararas.cps.sp.gov.br/tecnologia-em-desenvolvimento-de-softwares-multiplataforma/">DSM- Desenvolvimento de software multiplataforma.</a>
+<br>
 <br>
 Professor, <a href="https://github.com/orlandosaraivajr">Orlando Saraiva.</a>
 
@@ -17,6 +18,13 @@ Professor, <a href="https://github.com/orlandosaraivajr">Orlando Saraiva.</a>
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
   <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"/>
 </p>
+
+### Para rodar o sistema localmente, siga os passos abaixo:
+1. Clone o repositório
+2. Coloque a pasta `FATEC_DES_WEB2_2025_Avaliacao1`, na pasta `htdocs` do XAMPP ou WAMP.
+3. ligue o servidor local (XAMPP ou WAMP).
+4. Acesse o sistema pelo navegador, no endereço: `http://localhost/FATEC_DES_WEB2_2025_Avaliacao1`.
+5. Faça o login com as credenciais de **professor** ou **biblio**, para testar o sistema.
 
 
 ## Funcionalidades
@@ -35,3 +43,9 @@ Professor, <a href="https://github.com/orlandosaraivajr">Orlando Saraiva.</a>
 │── cadastro_livros.txt      (Armazena livros cadastrados)     
 └── redirect.php             (Gestão do botão voltar, de acordo com usuario logado na página livros_cadastrados.php)
 ```
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+Feito com 💜 por [Lucas Eduardo.](https://linktr.ee/lucas.007)

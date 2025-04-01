@@ -33,8 +33,6 @@ echo "<Center>ISBN: " . htmlspecialchars($isbn_p) . "<br></Center>";
     <p> Para ver livros cadastrados clique no botão abaixo:</p>
     <a href="livros_cadastrados.php" class="btn btn-primary">Ver Livros</a>
     <br><br>
-    <!-- <p> Para ver pedidos de livros clique no botão abaixo:</p>	
-    <a href="pedidos_cadastrados.php" class="btn btn-primary">Ver pedidos de livros</a> -->
     <a href="welcome_p.php" class="btn btn-primary">Voltar</a>
     </Center>
 </body>
