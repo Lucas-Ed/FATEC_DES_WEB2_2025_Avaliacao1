@@ -8,6 +8,8 @@ Sistema desenvolvido como parte [Avaliativa](https://github.com/orlandosaraivajr
 <br>
 <br>
 Professor, <a href="https://github.com/orlandosaraivajr">Orlando Saraiva.</a>
+<br>
+Feedback do professor, veja <a href="https://github.com/Lucas-Ed/FATEC_DES_WEB2_2025_Avaliacao1/issues/1">aqui.</a>
 
 <h3 align="center">✅ Concluído ✅</h3>
 
